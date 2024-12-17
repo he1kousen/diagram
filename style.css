@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  height: 100vh;
+  overflow: hidden; /* Mencegah scroll */
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%; /* Skala 40-60 */
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+#penjualanChart {
+  width: 90%; /* Lebar relatif agar sesuai */
+  height: 100%; /* Tinggi penuh */
+}
